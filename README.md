@@ -27,17 +27,13 @@ This project is a simple web application developed using ReactJS that displays a
 4. Start the development server: `npm start`
 5. Open your browser and go to `http://localhost:3000` to view the application.
 
-## Screenshots
-
-Include screenshots of your application here to showcase the UI and features.
-
 ## Demo
 
-Provide a link to the live demo if applicable.
+[Project Link](https://userdetails22.netlify.app/)
 
 ## Credits
 
-- Developer Name
+- Mohit Chaudhary
 - API Source: [MockAPI](https://602e7c2c4410730017c50b9d.mockapi.io/users)
 
 ## License
