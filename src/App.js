@@ -12,7 +12,7 @@ function App() {
       <CssBaseline />
       <Container style={{ flexGrow: 1 }}>
         <Typography variant="h3" align="center" margin={2}>
-          User Details
+          User Details Dashboard
         </Typography>
         <Grid container spacing={3}>
           <Grid item xs={12} md={4} order={{ xs: 2, md: 1 }}>
