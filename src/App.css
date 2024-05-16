@@ -38,30 +38,81 @@
 }
 
 
-body,.bg{
-  background-color: rgba(214, 195, 238, 0.301) !important;
+body{
+  color: white !important;
 }
 
 .listContainer{
-  border: 1px solid #ccc !important;
-  border-bottom: 0px !important;
+  color: white !important;
+}
+
+.MuiPaginationItem-root{
+  color: #ffffff !important;
+  margin-bottom: 5px !important;
 }
 
 .listItem {
-  border-bottom: 1px solid #ccc !important;
+  color: rgb(255, 255, 255) !important;
+  border-bottom: 1px solid #b6a4a4 !important;
   border-radius: 4px !important;
   transition: background-color 0.3s ease !important;
   margin-bottom: 3px !important;
 }
 
 .listItem:hover {
-  background-color: #0bffeb !important;
+  p{
+    color: #000 !important;
+  }
+  background-color: #9affe1 !important;
+  color: #000 !important;
 }
 
-.loader{
- display: flex;
- align-content: center;
- justify-content: center;
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px 15px;
+  background-color: red;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  font-weight: 900;
+  transition-duration: .2s;
+  background: linear-gradient(0deg, #000, #272727);
 }
 
+.card:before, .card:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
 
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.card:after {
+  filter: blur(15px);
+}
